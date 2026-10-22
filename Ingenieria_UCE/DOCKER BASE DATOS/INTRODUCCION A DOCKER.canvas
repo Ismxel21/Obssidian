@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"dfd44121e5c3a0f0","type":"text","text":"Introducción a Docker","x":-112,"y":-160,"width":250,"height":60},
+		{"id":"7da2c6b8fe84780e","type":"text","text":"Plataforma abierta para crear y ejecutar apps distribuidas\nComponentes separados\nEjecucion en distintas plataformas(misma compilación)","x":-400,"y":-400,"width":250,"height":200},
+		{"id":"bbb68e4a24653bbb","type":"text","text":"MAQUINA VIRTUAL\nSO Anfitrion\nHiperviso\nSO invitado, librerias, aplicacion","x":54,"y":-604,"width":286,"height":124},
+		{"id":"ad8653d5cc52228b","type":"text","text":"BASADO:\n64 bits, Linux","x":-275,"y":-634,"width":250,"height":60},
+		{"id":"e00f93d5af6ecce8","type":"text","text":"COMO FUNCIONA\nSO Anfitrion\nDocker\nLibrerias,Aplicacion","x":449,"y":-360,"width":250,"height":116},
+		{"id":"b3d176a5c544fa94","type":"text","text":"DESARROLLADORES?\ncero problemas dependencias\ncualquier lenguaje\nportabilidad multiplataforma\ncontrol de versiones\nrepos publicos y privados\ncompilaciones automaticas","x":320,"y":-220,"width":322,"height":180},
+		{"id":"9fcd3d33ea011ee8","type":"text","text":"Para que administradores?\nAbstracciondel SO anfitrion\nEscalabilidad rápida\nSeguradad añadidad y maximo rendimiento\nMenor tamaño de los contenedores\naprovechamiento hardware\nFunciona dentro de maquinas virtuales","x":512,"y":62,"width":328,"height":218},
+		{"id":"097da6cb58f0d963","type":"text","text":"VENTAJAS\ncodigo abierto\nenfocado a aplicaciones no maquinas\nReutiliizacion de compilaciones\nEcosistema crece\nAislamiento de recusos(red,ram)","x":109,"y":264,"width":250,"height":236},
+		{"id":"92f0a943cbd676a6","type":"text","text":"PUERTOS:\n3306 mySQL\n5432/ 3121 postgres\n8080 cont wen\n80 web\nSE PEUDE TENER EN DOCKER DOS SERVICIOS EN EL MISMO PUERTO","x":-307,"y":480,"width":250,"height":173},
+		{"id":"b33248f984ae075e","type":"text","text":"docker run --nmae some-postgres -e POSTGRES_PASSWORD= mysecretpassword -d postgres:alpine3.240","x":-432,"y":139,"width":250,"height":141}
+	],
+	"edges":[
+		{"id":"66467d402171e24c","fromNode":"dfd44121e5c3a0f0","fromSide":"top","toNode":"7da2c6b8fe84780e","toSide":"bottom"},
+		{"id":"9a7d1b2fa77455e0","fromNode":"dfd44121e5c3a0f0","fromSide":"top","toNode":"ad8653d5cc52228b","toSide":"bottom"},
+		{"id":"88f0607ab49f00c6","fromNode":"dfd44121e5c3a0f0","fromSide":"top","toNode":"bbb68e4a24653bbb","toSide":"bottom"},
+		{"id":"64a9d99430bbd0b2","fromNode":"dfd44121e5c3a0f0","fromSide":"right","toNode":"e00f93d5af6ecce8","toSide":"left"},
+		{"id":"19cca964340c6c8f","fromNode":"dfd44121e5c3a0f0","fromSide":"right","toNode":"b3d176a5c544fa94","toSide":"left"},
+		{"id":"a6ec697005e35f09","fromNode":"dfd44121e5c3a0f0","fromSide":"right","toNode":"9fcd3d33ea011ee8","toSide":"left"},
+		{"id":"d92308389df57533","fromNode":"dfd44121e5c3a0f0","fromSide":"bottom","toNode":"097da6cb58f0d963","toSide":"top"},
+		{"id":"b7b115a9a5b3a9f4","fromNode":"dfd44121e5c3a0f0","fromSide":"bottom","toNode":"92f0a943cbd676a6","toSide":"top"},
+		{"id":"a1eabdcbe48f69d2","fromNode":"dfd44121e5c3a0f0","fromSide":"bottom","toNode":"b33248f984ae075e","toSide":"top"}
+	]
+}
