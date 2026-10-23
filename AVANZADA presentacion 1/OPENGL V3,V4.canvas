@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"ef6a241f602ac1cd","type":"text","text":"OPEN GL 3 Y OPEN GL 4","x":-126,"y":-6,"width":286,"height":60},
+		{"id":"1f1aa98c54cfe838","type":"text","text":"VAO objeto obligatorioen el core profile en opengl 3 FBO y modelo de preciacion","x":-50,"y":-122,"width":250,"height":82},
+		{"id":"4f70f6aec2811add","type":"text","text":"Diferenciaciones\ncore profile es el modo moderno que elimina funciones obsoletas usa shaders y el compatibility creado para usar sftware antiguo sin necesidad de reescribir su codigo","x":-50,"y":-440,"width":250,"height":220},
+		{"id":"b9893893ffe7d95f","type":"file","file":"AVANZADA presentacion 1/Pasted image 20261022153440.png","x":293,"y":-342,"width":639,"height":320},
+		{"id":"2d55f8f219301542","type":"file","file":"AVANZADA presentacion 1/Pasted image 20261022152632.png","x":-1020,"y":-504,"width":863,"height":464},
+		{"id":"83be432693f5278b","type":"file","file":"AVANZADA presentacion 1/Pasted image 20261022153821.png","x":-1100,"y":64,"width":631,"height":344},
+		{"id":"86bf17b4074c9a0d","type":"text","text":"se basan en etapas las versiones","x":-50,"y":190,"width":250,"height":60},
+		{"id":"7b69f149de146cf6","type":"text","text":"en open gl version 4 introducen testelacion de hardware y dibujo indirecto ","x":580,"y":125,"width":250,"height":95},
+		{"id":"6308d2f68cb7cbee","type":"text","text":"en el 4.3 se añadio una etapa que no dibuja trianfulos ni pintanpixeles::: COMPUTE SHADERS","x":330,"y":341,"width":250,"height":135},
+		{"id":"a9765090439f134f","type":"file","file":"AVANZADA presentacion 1/Pasted image 20261022153404.png","x":-375,"y":408,"width":575,"height":288}
+	],
+	"edges":[
+		{"id":"23826ff3e4189a11","fromNode":"2d55f8f219301542","fromSide":"bottom","toNode":"ef6a241f602ac1cd","toSide":"left"},
+		{"id":"65ad6e03dcaec199","fromNode":"86bf17b4074c9a0d","fromSide":"right","toNode":"7b69f149de146cf6","toSide":"top"},
+		{"id":"dc58ba6614856e69","fromNode":"86bf17b4074c9a0d","fromSide":"bottom","toNode":"6308d2f68cb7cbee","toSide":"top"},
+		{"id":"65a1ed81e0ab2aaf","fromNode":"ef6a241f602ac1cd","fromSide":"bottom","toNode":"86bf17b4074c9a0d","toSide":"top"},
+		{"id":"ab49939933b465fa","fromNode":"86bf17b4074c9a0d","fromSide":"bottom","toNode":"a9765090439f134f","toSide":"top"},
+		{"id":"6c7f558fdfb3e312","fromNode":"b9893893ffe7d95f","fromSide":"bottom","toNode":"ef6a241f602ac1cd","toSide":"right"},
+		{"id":"d838f663e8e6af3c","fromNode":"4f70f6aec2811add","fromSide":"right","toNode":"b9893893ffe7d95f","toSide":"left"},
+		{"id":"5c06810738c8889d","fromNode":"b9893893ffe7d95f","fromSide":"left","toNode":"1f1aa98c54cfe838","toSide":"top"},
+		{"id":"f5ef8c6ef253c7b5","fromNode":"83be432693f5278b","fromSide":"right","toNode":"ef6a241f602ac1cd","toSide":"left"}
+	]
+}
