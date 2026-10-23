@@ -1,6 +1,6 @@
 ## Comandos Diarios para Guardar Cambios (PC $\rightarrow$ GitHub)
 
-cd C:\Users\USER\Documents\Obsidian\Ingenieria_UCE
+cd C:\Users\USER\Documents\Obsidian\
 
 Cuando termines de escribir o actualizar tus notas en la computadora, abre la terminal dentro de tu carpeta de Obsidian y ejecuta:
 
