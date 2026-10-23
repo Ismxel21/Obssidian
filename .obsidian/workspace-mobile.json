@@ -168,14 +168,14 @@
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false,
-      "obsidian-git:Open Git source control": false
+      "bases:Crear nueva base": false
     }
   },
-  "active": "2064d20cc32095f5",
+  "active": "5b4da997cf07aaa2",
   "lastOpenFiles": [
-    "Prueba en iPhone jeje.md",
+    "PROYECTO GIT.md",
     "Prueba iphone.md",
+    "Prueba en iPhone jeje.md",
     "Ingenieria_UCE/AVANZADA presentacion 1/GWSL_GLUT.canvas",
     "Ingenieria_UCE/AVANZADA presentacion 1/pipeline.canvas",
     "Ingenieria_UCE/AVANZADA presentacion 1/OPENGL V3,V4.canvas",
