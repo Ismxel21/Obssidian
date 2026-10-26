@@ -3,7 +3,7 @@
 ## 📌 Definición
 **OpenGL ES** es una **API (Application Programming Interface)** de procesamiento gráfico multiplataforma y estándar de la industria, diseñada específicamente para dispositivos con recursos limitados como teléfonos móviles (Android e iOS), tabletas, consolas portátiles y sistemas embebidos.
 
-Funciona como una versión optimizada y ligera del **OpenGL** tradicional de escritorio, proporcionando una interfaz de bajo nivel entre el código de la aplicación y la **GPU (Graphics Processing Unit), su lenguaje es GLSL (Open GL Shading Language**.
+Funciona como una versión optimizada y ligera del **OpenGL** tradicional de escritorio, proporcionando una interfaz de bajo nivel entre el código de la aplicación y la **GPU (Graphics Processing Unit), su lenguaje es GLSL (Open GL Shading Language** remnderiza graficos 2D y 3D en dispositivos con recursos limitados.
 
 ---
 
