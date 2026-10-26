@@ -13,7 +13,7 @@ Funciona como una versión optimizada y ligera del **OpenGL** tradicional de esc
 * **Pipeline Programable:** Utiliza un flujo de procesamiento gráfico basado en programas ejecutables en la GPU llamados **Shaders**, escritos en el lenguaje de sombreado **GLSL ES** (*OpenGL Shading Language for Embedded Systems*).
 * **Consumo Eficiente de Recursos:** Diseñado para minimizar el consumo de memoria y energía en dispositivos móviles sin sacrificar rendimiento.
 * **Procesamiento Vectorial en 2D y 3D:** Permite generar tanto gráficos bidimensionales simples como entornos tridimensionales complejos e interactivos.
-* **Control:  quien maneja los detalles de los graficos es el contorlador/driver automaticamente
+* **Control:**  quien maneja los detalles de los graficos es el contorlador/driver automaticamente
 
 ---
 
@@ -37,4 +37,4 @@ OpenGL ES permite construir contenido visual mediante los siguientes pasos funda
 * **Procesamiento de Imágenes y Video:** Aplicación de filtros visuales y efectos en tiempo real sobre la cámara o la galería.
 
 ## VERSIONES
- * ** OpenGL ES 2.0 introduce shaders programables, como control de color y vertices
+ * **OpenGL ES 2.0**introduce shaders programables, como control de color y vertices
