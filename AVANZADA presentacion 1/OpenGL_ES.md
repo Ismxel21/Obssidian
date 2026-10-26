@@ -37,4 +37,9 @@ OpenGL ES permite construir contenido visual mediante los siguientes pasos funda
 * **Procesamiento de Imágenes y Video:** Aplicación de filtros visuales y efectos en tiempo real sobre la cámara o la galería.
 
 ## VERSIONES
- * **OpenGL ES 2.0**introduce shaders programables, como control de color y vertices
+ * **OpenGL ES 1.0/1.1:** Funciones fijas ya definidas
+ * **OpenGL ES 2.0:**: introduce shaders programables, como control de color y vertices
+* **OpenGL ES 3.0/3.1/3.2:**: shaders geometria,
+
+## VULKAN
+* OpenGL ES practicamente es un carro automatico y vulkan es mas manual
