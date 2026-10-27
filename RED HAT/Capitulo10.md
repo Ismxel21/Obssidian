@@ -1,6 +1,4 @@
-Voy a generar una guía completa de referencia y repaso en formato Markdown que consolide y organice de forma clara todos los temas de administración de Red Hat Enterprise Linux (RHEL) incluidos en tus apuntes.
 
-```markdown:Guia_Administracion_RHEL.md
 # Guía Completa de Administración de Red Hat Enterprise Linux (RHEL)
 
 ## 1. Cuentas de Usuario y Propiedad de Archivos
