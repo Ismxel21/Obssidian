@@ -1,0 +1,41 @@
+Aquí tienes las 5 preguntas seleccionadas, ordenadas y listas para que las puedas copiar y pegar y pasárselas a tu compañero:
+
+    ¿Cuál es la definición principal de un Shader?
+    A) Algoritmos de propósito general que se ejecutan en la memoria RAM.
+    B) Pequeños programas que se ejecutan directamente en la GPU (tarjeta gráfica).
+    C) Funciones estáticas que reemplazan por completo a la CPU.
+    D) Scripts de red para sincronizar gráficos en tiempo real.
+    Respuesta correcta: B   
+    PDF+ 1
+
+    ¿Cuál es la función específica del Vertex Shader dentro de la tubería gráfica?
+    A) Calcular el color exacto de cada píxel en la pantalla.
+    B) Transformar coordenadas 3D y aplicar perspectiva mediante matrices.
+    C) Gestionar la conexión de red entre el cliente y el servidor.
+    D) Compilar el código fuente en texto plano.
+    Respuesta correcta: B   
+    PDF+ 1
+
+    ¿Para qué se utilizan las variables calificadas como varying (o out) en GLSL?
+    A) Para pasar información calculada del Vertex Shader al Fragment Shader.
+    B) Para almacenar texturas fijas en el disco duro.
+    C) Para recibir eventos del teclado y el ratón.
+    D) Para definir constantes matemáticas globales.
+    Respuesta correcta: A   
+    PDF+ 1
+
+    ¿Cuál es una de las aplicaciones reales mencionadas para el uso avanzado de shaders en motores gráficos?
+    A) Compilación de bases de datos relacionales.
+    B) Iluminación avanzada, materiales realistas (PBR) y mapeo de relieves (Normal Maps).
+    C) Gestión de protocolos de red inalámbrica.
+    D) Creación de interfaces de usuario en hojas de cálculo.
+    Respuesta correcta: B   
+    PDF+ 1
+
+    Antes de la llegada del pipeline programable con GLSL, ¿cómo procesaban los gráficos las computadoras?
+    A) Mediante una función fija, predefinida y secuencial
+    B) Directamente desde la memoria caché de la CPU sin intermediarios
+    C) Utilizando lenguajes de alto nivel como Java o Python
+    D) A través de procesamiento exclusivamente en la nube
+    Respuesta correcta: A   
+    PDF+ 1
