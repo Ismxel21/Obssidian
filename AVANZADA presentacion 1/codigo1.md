@@ -1,4 +1,4 @@
-#Guía de Estudio: Introducción a OpenGL ES en Android
+# Guía de Estudio: Introducción a OpenGL ES en Android
 
 Este documento explica en detalle el funcionamiento del código para renderizar gráficos básicos en Android utilizando **OpenGL ES 2.0**.
 
