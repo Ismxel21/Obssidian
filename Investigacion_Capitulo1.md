@@ -33,8 +33,8 @@
 * **Origen:** Tiene sus raíces en las obras de August Comte y Émile Durkheim, apoyándose en el positivismo y neopositivismo. Se le asocia tradicionalmente con las ciencias exactas o naturales (física, química, biología).
 
 
-* **Proceso (Fases secuenciales de la Figura 1.1):**
-* Fase 1: Idea $\rightarrow$ Fase 2: Planteamiento del problema $\rightarrow$ Fase 3: Revisión de la literatura y desarrollo del marco teórico $\rightarrow$ Fase 4: Visualización del alcance del estudio $\rightarrow$ Fase 5: Elaboración de hipótesis y definición de variables $\rightarrow$ Fase 6: Desarrollo del diseño de investigación $\rightarrow$ Fase 7: Definición y selección de la muestra $\rightarrow$ Fase 8: Recolección de los datos $\rightarrow$ Fase 9: Análisis de los datos $\rightarrow$ Fase 10: Elaboración del reporte de resultados. (¡Importante: Es secuencial y no se pueden saltar fases).
+* **Proceso (Fases secuenciales):**
+* Fase 1: Idea -> Fase 2: Planteamiento del problema -> Fase 3: Revisión de la literatura y desarrollo del marco teórico -> Fase 4: Visualización del alcance del estudio -> Fase 5: Elaboración de hipótesis y definición de variables -> Fase 6: Desarrollo del diseño de investigación -> Fase 7: Definición y selección de la muestra -> Fase 8: Recolección de los datos -> Fase 9: Análisis de los datos -> Fase 10: Elaboración del reporte de resultados. (¡Importante: Es secuencial y no se pueden saltar fases!).
 
 
 
@@ -86,7 +86,7 @@
 * **El "Paraguas Cualitativo":** A veces se le conoce como *investigación naturalista, fenomenológica, interpretativa o etnográfica*; funciona como una especie de "paraguas" que incluye una variedad de concepciones, visiones, técnicas y estudios no cuantitativos.
 
 
-* **Proceso (Fases de la Figura 1.3):**
+* **Proceso:**
 * Aunque cuenta con fases (Idea, Planteamiento del problema, Inmersión inicial en el campo, Concepción del diseño del estudio, Definición de la muestra inicial, Recolección de datos, Análisis, Interpretación y Reporte), **su proceso es eminentemente circular y flexible**.
 
 
@@ -146,7 +146,7 @@
 
 
 * **Enfoque Cualitativo (Realidad Subjetiva):**
-* Parte de la premisa de que **el mundo social es "relativo"** y solo puede ser entendido desde el punto de vista de los actores estudiados.
+* Parte de la premisa de que **el mundo social es "relativo"** y solo puede ser entendido desde el punto vista de los actores estudiados.
 
 
 * La realidad se va construyendo mediante la interacción y las definiciones de los participantes; existen **múltiples realidades subjetivas** que varían entre grupos y culturas.
@@ -157,65 +157,107 @@
 
 ---
 
-## 5. Tabla Comparativa Definitiva (Enfoques en Contraste)
+## 5. Comparativa Punto por Punto (Enfoques en Contraste)
 
-| Dimensión / Aspecto | Enfoque Cuantitativo | Enfoque Cualitativo |
-| --- | --- | --- |
-| **Orienta su meta a:** | Describir, explicar y predecir los fenómenos (generar y probar teorías).
+* **1. Orienta su meta a:**
+* **Enfoque Cuantitativo:** Describir, explicar y predecir los fenómenos (generar y probar teorías).
 
- | Describir, comprender e interpretar los fenómenos a través de las percepciones y significados de los participantes.
 
- |
-| **Punto de partida:** | Hay una realidad que conocer (objetiva, externa al investigador).
+* **Enfoque Cualitativo:** Describir, comprender e interpretar los fenómenos a través de las percepciones y significados de los participantes.
 
- | Hay una realidad que debe construirse e interpretarse (múltiples realidades subjetivas).
 
- |
-| **Naturaleza de la realidad:** | La realidad no cambia por las observaciones y mediciones realizadas.
 
- | La realidad sí cambia por las observaciones y la recolección de datos.
 
- |
-| **Lógica:** | Se aplica la **lógica deductiva** (de lo general a lo particular: de la teoría a los datos).
+* **2. Punto de partida:**
+* **Enfoque Cuantitativo:** Hay una realidad que conocer (objetiva, externa al investigador).
 
- | Se aplica la **lógica inductiva** (de lo particular a lo general: de los datos a las generalizaciones y la teoría).
 
- |
-| **Muestra:** | Se involucra a **muchos sujetos** porque se pretende generalizar los resultados (casos estadísticamente representativos).
+* **Enfoque Cualitativo:** Hay una realidad que debe construirse e interpretarse (múltiples realidades subjetivas).
 
- | Se involucra a **pocos sujetos** porque no se busca necesariamente generalizar (casos individuales, representativos cualitativamente).
 
- |
-| **Naturaleza de los datos:** | Datos "duros" (*hard*), cuantificables y numéricos.
 
- | Datos profundos y enriquecedores, "suaves" (*soft*): textos, narraciones, significados, audios, vídeos.
 
- |
-| **Posición del Investigador:** | Neutral. Hace a un lado sus valores y creencias; busca procedimientos estandarizados y objetivos.
+* **3. Naturaleza de la realidad:**
+* **Enfoque Cuantitativo:** La realidad no cambia por las observaciones y mediciones realizadas.
 
- | Explícita. Reconoce sus propios valores y creencias; se involucra cercanamente como parte del estudio.
 
- |
-| **Diseño de investigación:** | Estructurado, predeterminado y previo a la recolección de datos.
+* **Enfoque Cualitativo:** La realidad sí cambia por las observaciones y la recolección de datos.
 
- | Abierto, flexible, construido durante el trabajo de campo y la recolección.
 
- |
-| **Uso de la Teoría:** | La teoría se utiliza para ajustar sus postulados al mundo empírico (probar hipótesis).
 
- | La teoría es un marco de referencia; no se fundamenta en estudios anteriores, sino que se construye a partir de los datos empíricos.
 
- |
-| **Hipótesis:** | Se prueban hipótesis; se establecen para aceptarlas o rechazarlas mediante análisis estadístico de probabilidad.
+* **4. Lógica:**
+* **Enfoque Cuantitativo:** Se aplica la **lógica deductiva** (de lo general a lo particular: de la teoría a los datos).
 
- | Se generan hipótesis durante el estudio o al final de este (no siempre se establecen al inicio).
 
- |
-| **Reporte de Resultados:** | Tono objetivo, impersonal, no emotivo (tablas, diagramas, modelos estadísticos).
+* **Enfoque Cualitativo:** Se aplica la **lógica inductiva** (de lo particular a lo general: de los datos a las generalizaciones y la teoría).
 
- | Tono personal y emotivo (narraciones, fragmentos de texto, vídeos, audios, fotografías, mapas).
 
- |
+
+
+* **5. Muestra:**
+* **Enfoque Cuantitativo:** Se involucra a **muchos sujetos** porque se pretende generalizar los resultados (casos estadísticamente representativos).
+
+
+* **Enfoque Cualitativo:** Se involucra a **pocos sujetos** porque no se busca necesariamente generalizar (casos individuales, representativos cualitativamente).
+
+
+
+
+* **6. Naturaleza de los datos:**
+* **Enfoque Cuantitativo:** Datos "duros" (*hard*), cuantificables y numéricos.
+
+
+* **Enfoque Cualitativo:** Datos profundos y enriquecedores, "suaves" (*soft*): textos, narraciones, significados, audios, vídeos.
+
+
+
+
+* **7. Posición del Investigador:**
+* **Enfoque Cuantitativo:** Neutral. Hace a un lado sus valores y creencias; busca procedimientos estandarizados y objetivos.
+
+
+* **Enfoque Cualitativo:** Explícita. Reconoce sus propios valores y creencias; se involucra cercanamente como parte del estudio.
+
+
+
+
+* **8. Diseño de investigación:**
+* **Enfoque Cuantitativo:** Estructurado, predeterminado y previo a la recolección de datos.
+
+
+* **Enfoque Cualitativo:** Abierto, flexible, construido durante el trabajo de campo y la recolección.
+
+
+
+
+* **9. Uso de la Teoría:**
+* **Enfoque Cuantitativo:** La teoría se utiliza para ajustar sus postulados al mundo empírico (probar hipótesis).
+
+
+* **Enfoque Cualitativo:** La teoría es un marco de referencia; no se fundamenta en estudios anteriores, sino que se construye a partir de los datos empíricos.
+
+
+
+
+* **10. Hipótesis:**
+* **Enfoque Cuantitativo:** Se prueban hipótesis; se establecen para aceptarlas o rechazarlas mediante análisis estadístico de probabilidad.
+
+
+* **Enfoque Cualitativo:** Se generan hipótesis durante el estudio o al final de este (no siempre se establecen al inicio).
+
+
+
+
+* **11. Reporte de Resultados:**
+* **Enfoque Cuantitativo:** Tono objetivo, impersonal, no emotivo (tablas, diagramas, modelos estadísticos).
+
+
+* **Enfoque Cualitativo:** Tono personal y emotivo (narraciones, fragmentos de texto, vídeos, audios, fotografías, mapas).
+
+
+
+
 
 ---
 
