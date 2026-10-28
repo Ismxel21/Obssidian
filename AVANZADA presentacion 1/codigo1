@@ -1,0 +1,141 @@
+# Guía de Estudio: Introducción a OpenGL ES en Android
+
+Este documento explica en detalle el funcionamiento del código para renderizar gráficos básicos en Android utilizando **OpenGL ES 2.0**.
+
+---
+
+## 🏗️ Arquitectura General
+
+Para renderizar gráficos en 2D/3D en Android, se suele utilizar una estructura basada en tres componentes clave:
+
+1. **`MainActivity`**: Contenedor principal de la aplicación (Android View Lifecycle).
+2. **`MyGLSurfaceView`**: La vista dedicada a mostrar los gráficos de OpenGL.
+3. **`MyGLRenderer`**: El motor encargado de definir qué se dibuja y cómo se dibuja.
+
+---
+
+## 📄 1. `MainActivity.java`
+
+Esta es la actividad principal de Android. Su función es inicializar la vista personalizada y colocarla como el contenido visual principal de la pantalla.
+
+```java
+package com.prograavanzada.primerproyecto;
+
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+    private MyGLSurfaceView myGLSurfaceView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        
+        // 1. Instancia la vista personalizada que manejará OpenGL
+        myGLSurfaceView = new MyGLSurfaceView(this);
+        
+        // 2. Establece MyGLSurfaceView como el contenido principal de la pantalla
+        setContentView(myGLSurfaceView);
+    }
+}
+```
+
+### 🔑 Puntos Clave:
+* **`setContentView(myGLSurfaceView)`**: En lugar de inflar un archivo XML (`R.layout.activity_main`), le indicamos a la actividad que toda la pantalla será ocupada por nuestra vista de OpenGL (`MyGLSurfaceView`).
+
+---
+
+## 📄 2. `MyGLSurfaceView.java`
+
+Esta clase extiende de `GLSurfaceView`, un componente especializado de Android que proporciona una superficie dedicada para renderizar gráficos mediante llamadas a OpenGL.
+
+```java
+package com.prograavanzada.primerproyecto;
+
+import android.content.Context;
+import android.opengl.GLSurfaceView;
+
+public class MyGLSurfaceView extends GLSurfaceView {
+
+    private MyGLRenderer myGLRenderer;
+
+    public MyGLSurfaceView(Context context) {
+        super(context);
+
+        // 1. Define la versión de OpenGL ES que se va a utilizar (Versión 2.0)
+        setEGLContextClientVersion(2);
+
+        // 2. Instancia el renderizador que contiene la lógica de dibujo
+        myGLRenderer = new MyGLRenderer();
+        
+        // 3. Conecta el renderizador con esta vista
+        setRenderer(myGLRenderer);
+    }
+}
+```
+
+### 🔑 Puntos Clave:
+* **`setEGLContextClientVersion(2)`**: Configura el contexto de OpenGL a la versión 2.0. Es indispensable definirlo antes de asignar el renderizador.
+* **`setRenderer(myGLRenderer)`**: Registra el objeto `Renderer` encargado de ejecutar el código gráfico en un hilo dedicado de renderizado (`GLThread`).
+
+---
+
+## 📄 3. `MyGLRenderer.java`
+
+Implementa la interfaz `GLSurfaceView.Renderer`. Aquí reside la lógica principal del ciclo de vida gráfico de OpenGL. Posee tres métodos indispensables que el sistema llama automáticamente:
+
+```java
+package com.prograavanzada.primerproyecto;
+
+import android.opengl.GLES20;
+import android.opengl.GLSurfaceView;
+import javax.microedition.khronos.egl.EGLConfig;
+import javax.microedition.khronos.opengles.GL10;
+
+public class MyGLRenderer implements GLSurfaceView.Renderer {
+
+    @Override
+    public void onSurfaceCreated(GL10 gl, EGLConfig config) {
+        // Se ejecuta UNA SOLA VEZ cuando la superficie es creada.
+        // Se usa para definir configuraciones globales iniciales.
+        GLES20.glClearColor(1.0f, 0.6f, 0.4f, 0.2f); // Color de fondo (RGBA)
+    }
+
+    @Override
+    public void onSurfaceChanged(GL10 gl, int width, int height) {
+        // Se ejecuta cuando el tamaño de la pantalla cambia (ej. rotación de pantalla).
+        // Define el área útil de dibujo dentro de la pantalla.
+        GLES20.glViewport(0, 0, width, height);
+    }
+
+    @Override
+    public void onDrawFrame(GL10 gl) {
+        // Se ejecuta CONTINUAMENTE (en cada fotograma/frame).
+        // Limpia la pantalla para redibujar los objetos.
+        GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT);
+    }
+}
+```
+
+---
+
+## 💡 Explicación Detallada de los Métodos del Renderizador
+
+| Método | Frecuencia de Ejecución | Uso Principal |
+| :--- | :--- | :--- |
+| `onSurfaceCreated` | 1 vez al inicio | Configuración de colores iniciales, shaders, texturas y buffers. |
+| `onSurfaceChanged` | Al iniciar y al cambiar dimensiones/orientación | Ajuste del Viewport y proyección de la cámara según el ancho y alto. |
+| `onDrawFrame` | Múltiples veces por segundo (FPS) | Dibujar geometrías, procesar animaciones y limpiar el frame anterior. |
+
+### Métodos de OpenGL ES utilzados:
+
+1. **`GLES20.glClearColor(red, green, blue, alpha)`**:
+   * Define el color con el que se "pintará" el fondo cuando se limpie la pantalla.
+   * Los valores están expresados en una escala flotante de `0.0f` a `1.0f`.
+   * En este caso: `R = 1.0` (100% Rojo), `G = 0.6` (60% Verde), `B = 0.4` (40% Azul), `A = 0.2` (Opacidad/Transparencia).
+
+2. **`GLES20.glViewport(x, y, width, height)`**:
+   * Establece las coordenadas del marco visual (Viewport) de OpenGL en píxeles de pantalla. `(0,0)` representa la esquina inferior izquierda.
+
+3. **`GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT)`**:
+   * Borra el contenido actual del *Color Buffer* rellenando la pantalla con el color previamente configurado en `glClearColor`.
