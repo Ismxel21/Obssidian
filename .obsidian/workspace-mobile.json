@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROYECTO GIT.md",
+                "file": "Inferencia Estadistica/Sin título.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PROYECTO GIT"
+              "title": "Sin título"
             }
           }
         ],
@@ -187,8 +187,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5b4da997cf07aaa2",
+  "active": "dee32ba5df6a6153",
   "lastOpenFiles": [
+    "PROYECTO GIT.md",
+    "Inferencia Estadistica/Sin título.md",
     "Inferencia Estadistica",
     "Prueba iphone.md",
     "DOCKER BASE DATOS/mysql.md",
@@ -204,7 +206,6 @@
     "Patrones/Abstract/lib/src/main/java/com/impl/VentanaClaro.java",
     "Patrones/Abstract/lib/src/main/java/com/impl/UIFactoryOscuro.java",
     "Patrones/Abstract/lib/src/main/java/com/impl/UIFactoryClaro.java",
-    "Patrones/Abstract/lib/src/main/java/com/impl/BotonOscuro.java",
     "Investigación/Investigacion_Capitulo1.md",
     "Patrones/Codigo/Singleton_Patrones.md",
     "Patrones/Codigo/Practica1.md",
@@ -225,7 +226,6 @@
     "DOCKER BASE DATOS/INTRODUCCION A DOCKER.canvas",
     "DOCKER BASE DATOS/BaseDatosNoSQL.md",
     "Patrones/Factory.md",
-    "PROYECTO GIT.md",
     "Prueba en iPhone jeje.md",
     "Ingenieria_UCE/AVANZADA presentacion 1/GWSL_GLUT.canvas",
     "Ingenieria_UCE/AVANZADA presentacion 1/pipeline.canvas",
