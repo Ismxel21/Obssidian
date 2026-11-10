@@ -41,32 +41,57 @@ public class Line {
     // Coordenadas cartesianas normalizadas de OpenGL (rango de -1.0 a 1.0).
     // Definimos una línea con dos puntos (Punto A y Punto B):
     private final float[] lineCoords = {
-           -0.5f,  0.5f, // Vértice 1 (Inicio)
-            0.5f,  0.0f  // Vértice 2 (Fin)
+            0.0f,  0.5f, // Vértice 1 (Inicio)
+            0.0f,  0.9f,  // Vértice 2 (Fin)
+
+            -0.5f,  0.7f, // Vértice 1 (Inicio)
+            0.5f,  0.7f,  // Vértice 2 (Fin)
+
+            -.6f, -.3f,
+            -0.4f, 0.3f,
+            -.2f, -.3f,
+            -.0f, .3f,
+            .2f, -.3f,
+            .4f, .3f,
+            .6f, -.3f,
+
+            -.25f, -.4f,
+            .25f, -.4f,
+            .5f, -.6f,
+            .25f,-.8f,
+            -.25f,-.8f,
+            -.5f, -.6f,
+
+
+
+
+
+
+
     };
 
     // Color asignado a la línea en formato RGBA (Red, Green, Blue, Alpha).
     // Valores entre 0.0f y 1.0f. (Naranja/Amarillo brillante).
-    float[] color = { 1.0f, 1.0f, 0.0f, 1.0f };
+    float[] color = { 0.0f, 0.0f, 0.0f, 0.0f };
 
     // A. El Vertex Shader (El geómetra):
-    // Su único trabajo es tomar las coordenadas de cada punto y decidir exactamente 
+    // Su único trabajo es tomar las coordenadas de cada punto y decidir exactamente
     // en qué lugar de la pantalla deben colocarse.
     private final String vertexShaderCode =
             "attribute vec4 vPosition;" + // Variable que recibe la posición (X, Y, Z, W) desde Java.
-            "void main() {" +
-            "  gl_Position = vPosition;" + // Variable obligatoria de OpenGL donde guardamos la posición final.
-            "}";
+                    "void main() {" +
+                    "  gl_Position = vPosition;" + // Variable obligatoria de OpenGL donde guardamos la posición final.
+                    "}";
 
     // B. El Fragment Shader (El pintor):
-    // Una vez que la tarjeta gráfica sabe por dónde pasa la línea, 
+    // Una vez que la tarjeta gráfica sabe por dónde pasa la línea,
     // este shader se encarga de pintar cada uno de los píxeles con el color enviado.
     private final String fragmentShaderCode =
             "precision mediump float;" + // Define una precisión matemática estándar para los decimales.
-            "uniform vec4 vColor;" +      // Variable que recibe el color RGBA desde Java.
-            "void main() {" +
-            "  gl_FragColor = vColor;" +   // Variable obligatoria donde asignamos el color final visible.
-            "}";
+                    "uniform vec4 vColor;" +      // Variable que recibe el color RGBA desde Java. uniform por que son constantes
+                    "void main() {" +
+                    "  gl_FragColor = vColor;" +   // Variable obligatoria donde asignamos el color final visible enc ada fragmento.
+                    "}";
 
     /**
      * Constructor de la clase Line.
@@ -74,11 +99,11 @@ public class Line {
      */
     public Line() {
         // Paso 1: Reservamos espacio en la memoria nativa del sistema.
-        // Como tenemos 4 valores en total (2 puntos * 2 coordenadas X/Y) 
+        // Como tenemos 4 valores en total (2 puntos * 2 coordenadas X/Y)
         // y cada float ocupa 4 bytes, pedimos 4 * 4 = 16 bytes de memoria para la GPU.
         ByteBuffer byteBuffer = ByteBuffer.allocateDirect(lineCoords.length * 4);
 
-        // Paso 2: Nos aseguramos de que los bytes se lean en el orden correcto 
+        // Paso 2: Nos aseguramos de que los bytes se lean en el orden correcto
         // según el procesador del dispositivo (arquitectura Little-Endian o Big-Endian).
         byteBuffer.order(ByteOrder.nativeOrder());
 
@@ -88,7 +113,7 @@ public class Line {
         // Paso 4: Copiamos los números de nuestro arreglo de Java (`lineCoords`) hacia este nuevo búfer nativo.
         vertexBuffer.put(lineCoords);
 
-        // Paso 5: Devolvemos el puntero del búfer al inicio (posición 0) 
+        // Paso 5: Devolvemos el puntero del búfer al inicio (posición 0)
         // para que la GPU empiece a leer desde el primer número.
         vertexBuffer.position(0);
 
@@ -109,7 +134,7 @@ public class Line {
 
     /**
      * Carga y compila el código fuente escrito en GLSL dentro de la GPU.
-     * 
+     *
      * @param type Tipo de shader (GLES20.GL_VERTEX_SHADER o GLES20.GL_FRAGMENT_SHADER).
      * @param shaderCode Cadena de texto con el código escrito en GLSL.
      * @return Retorna el identificador (ID) del shader en la GPU.
@@ -156,10 +181,17 @@ public class Line {
 
         // 6. Transfiere el arreglo de color hacia la variable uniforme de la GPU.
         GLES20.glUniform4fv(colorHandle, 1, color, 0);
+        GLES20.glLineWidth(5.0f);
 
-        // 7. Orden de renderizado: Dibuja líneas (`GLES20.GL_LINES`), 
+        // 7. Orden de renderizado: Dibuja líneas (`GLES20.GL_LINES`),
         // empezando desde el vértice 0 y utilizando un total de 2 vértices.
-        GLES20.glDrawArrays(GLES20.GL_LINES, 0, 2);
+       GLES20.glDrawArrays(GLES20.GL_LINES, 0, 4);//linea tradicional
+        GLES20.glDrawArrays(GLES20.GL_LINE_STRIP, 4,7);
+        GLES20.glDrawArrays(GLES20.GL_LINE_LOOP, 11,6);
+        // 8. Desactiva el canal del atributo de posición para mantener limpia la GPU.
+        GLES20.glDisableVertexAttribArray(positionHandle);//limpieza de la cache
+    }
+}
 
         // 8. Desactiva el canal del atributo de posición para mantener limpia la GPU.
         GLES20.glDisableVertexAttribArray(positionHandle);
