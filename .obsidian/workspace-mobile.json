@@ -49,8 +49,7 @@
               "title": "Sin título"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -201,7 +200,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5b4da997cf07aaa2",
+  "active": "2064d20cc32095f5",
   "lastOpenFiles": [
     "Investigación/Investigacion_Capitulo1.md",
     "Código avanzada/Sin título.md",
