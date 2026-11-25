@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Patrones/Codigo/Singleton_Patrones.md",
+                "file": "avanzada.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Singleton_Patrones"
+              "title": "avanzada"
             }
           },
           {
@@ -145,7 +145,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "AVANZADA presentacion 1/punto.md",
+            "file": "avanzada.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -202,6 +202,7 @@
   },
   "active": "2064d20cc32095f5",
   "lastOpenFiles": [
+    "Patrones/Codigo/Singleton_Patrones.md",
     "Inferencia Estadistica/ojeda_austin_deber1/Campo1.java",
     "Inferencia Estadistica/ojeda_austin_deber1/Campo2.java",
     "Inferencia Estadistica/ojeda_austin_deber1/Camiseta.java",
@@ -212,7 +213,6 @@
     "Inferencia Estadistica/ojeda_austin_deber1/Cejas.java",
     "Inferencia Estadistica/ojeda_austin_deber1/Sol.java",
     "Inferencia Estadistica/ojeda_austin_deber1/Polines.java",
-    "Inferencia Estadistica/ojeda_austin_deber1/Ojos.java",
     "Inferencia Estadistica/videosVivas.md",
     "AVANZADA presentacion 1/line.md",
     "avanzada.md",
@@ -226,7 +226,6 @@
     "DOCKER BASE DATOS/mysql.md",
     "Patrones/InstruccionesLombok/lombok+proyectogradle.md",
     "DOCKER BASE DATOS/redisConecction.md",
-    "Patrones/Codigo/Singleton_Patrones.md",
     "Patrones/Codigo/Practica1.md",
     "AVANZADA presentacion 1/codigo1.md",
     "Patrones/introspeccionVSreflexion.md",
