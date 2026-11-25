@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "avanzada.md",
+                "file": "avanzadados.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "avanzada"
+              "title": "avanzadados"
             }
           },
           {
@@ -145,7 +145,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "avanzada.md",
+            "file": "avanzadados.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -202,6 +202,8 @@
   },
   "active": "2064d20cc32095f5",
   "lastOpenFiles": [
+    "avanzada.md",
+    "avanzadados.md",
     "Patrones/Codigo/Singleton_Patrones.md",
     "Inferencia Estadistica/ojeda_austin_deber1/Campo1.java",
     "Inferencia Estadistica/ojeda_austin_deber1/Campo2.java",
@@ -215,7 +217,6 @@
     "Inferencia Estadistica/ojeda_austin_deber1/Polines.java",
     "Inferencia Estadistica/videosVivas.md",
     "AVANZADA presentacion 1/line.md",
-    "avanzada.md",
     "Investigación/Investigacion_Capitulo1.md",
     "Código avanzada/Sin título.md",
     "AVANZADA presentacion 1/punto.md",
